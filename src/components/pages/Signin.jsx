@@ -20,11 +20,27 @@ const Signin = () => {
         setPassword(e.target.value)
     }
 
+
+
     function handleSubmit(e) {
         e.preventDefault();
         localStorage.setItem("Email", email);
         localStorage.setItem("Password", password);
-        navigate('/home')
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const passwordPattern = /^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[a-zA-Z]).{8,}$/;
+
+        if (!emailPattern.test(email)) {
+            alert('Invalid email address!');
+
+        }
+
+        if (!passwordPattern.test(password)) {
+            alert('Invalid Password!');
+        }
+        if (emailPattern.test(email) && passwordPattern.test(password)) {
+            navigate('/home');
+        }
     }
 
     function handleForgotPassword() {
@@ -36,7 +52,7 @@ const Signin = () => {
             <div className={styles.logoBox}>
                 <SiTwitter className={styles.Twticon} />
                 <h2>Sign in to Twitter</h2>
-                <button>
+                <button >
                     <FcGoogle className={styles.Gicon} />
                     Sign in with Google
                 </button>
@@ -45,7 +61,7 @@ const Signin = () => {
                 <br />
                 <form onSubmit={handleSubmit} >
                     <label  >
-                        <input type="email" value={email} onChange={handleEmail} className={styles.input} placeholder="Email" />
+                        <input type="text" value={email} onChange={handleEmail} className={styles.input} placeholder="Email" />
                     </label>
                     <br />
                     <br />
