@@ -23,7 +23,7 @@ const Signin = () => {
     }
 
     function handleForgotPassword(){
-        console.log('hello')
+        navigate('/resetpassword')
     }
 
     return(

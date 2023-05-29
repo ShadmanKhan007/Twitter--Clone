@@ -8,6 +8,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Homepage from './components/pages/homepage';
+import ForgotPassword from './components/pages/forgotpass';
+import Signin from './components/pages/Signin';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <Homepage />,
+  },
+  {
+    path: "/resetpassword",
+    element: <ForgotPassword />,
+  },
+  {
+    path: "/signin",
+    element: <Signin />,
   },
 ]);
 
