@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
+import style from './forgotpass.module.css';
+import { SiTwitter } from 'react-icons/si';
 
 const ForgotPassword = () => {
 
@@ -27,17 +29,16 @@ const ForgotPassword = () => {
   }
 
   return (
-    <div>
-      <h1>Reset Password</h1>
+    <div className={style.container}>
+      <SiTwitter className={style.Twticon} />
+      <h2>Reset Password</h2>
       <form onSubmit={handleSubmission}>
         <label>
-            New Password: 
-            <input type='password' value={password} onChange={handlePasswordChange}/>
+            <input type='password' value={password} onChange={handlePasswordChange} placeholder='New password' className={style.input}/>
         </label>
         <br />
         <label>
-            Confirm Password:
-            <input type='password' value={confirmPassword} onChange={handleConfirmPasswordChange}/>
+            <input type='password' value={confirmPassword} onChange={handleConfirmPasswordChange} placeholder='Confirm new password' className={style.input}/>
         </label>
         <br />
         <button type='submit'>Set New Password</button>
