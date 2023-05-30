@@ -1,0 +1,127 @@
+.main {
+    margin-top: 10px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin-left: 500px;
+  }
+
+  /* .logobox{
+    background: #fff;
+    padding: 30px 120px;
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+  } */
+  
+  .googleButton {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .googleLogo {
+    width: 24px; /* Adjust the width as needed */
+    height: 24px; /* Adjust the height as needed */
+    margin-left: -220px; /* Adjust the margin as needed */
+    margin-top: 10px;
+  }
+  
+  .googleButton h4 {
+    margin-top: -11px;
+  }
+  
+  
+  
+  
+  img{
+    height: 45px;
+   
+  }
+  
+  h2{
+    margin-left: -25px;
+    margin-top: 50px;
+  }
+  .googleButton{
+    display: block;
+    background-color: white;
+    margin-top: -50px;
+     height: 55px;
+     width: 300px;
+     border-radius: 30px;
+     cursor: pointer;
+     border-style: none;
+     border: 3px solid #dadce0 ;
+     
+     
+   
+  
+  }
+  
+  .appleButton{
+    display: block;
+    background-color: white;
+    margin-top: 20px;
+    height: 55px;
+     width: 300px;
+     border-radius: 30px;
+     cursor: pointer;
+     border-style: none;
+     border: 3px solid #dadce0 ;
+  
+  
+  }
+  
+  .appleLogo{
+  
+    height: 30px;
+    width: 24px;
+    margin-left: -220px;
+    margin-top: 5px;
+  
+  }
+  
+  .appleButton h4 {
+    margin-top: -23px;
+  }
+  
+  
+  
+  .accountButton{
+    display: block;
+    background-color: black;
+    color: white;
+    margin-top: -5px;
+    height: 55px;
+    width: 300px;
+    border-radius: 30px;
+    cursor: pointer;
+    border-style: none;
+    border: 3px solid #dadce0 ;
+  
+  }
+  
+  .google{
+    margin-top: 15px;
+  }
+  
+  h4{
+    margin-top: 8px;
+  }
+  
+  a{
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+  }

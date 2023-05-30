@@ -28,7 +28,7 @@ const Signin = () => {
         localStorage.setItem("Password", password);
 
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        const passwordPattern = /^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[a-zA-Z]).{8,}$/;
+        const passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
 
         if (!emailPattern.test(email)) {
             alert('Invalid email address!');
@@ -38,6 +38,7 @@ const Signin = () => {
         if (!passwordPattern.test(password)) {
             alert('Invalid Password!');
         }
+        
         if (emailPattern.test(email) && passwordPattern.test(password)) {
             navigate('/home');
         }

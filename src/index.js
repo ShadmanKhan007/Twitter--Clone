@@ -10,6 +10,9 @@ import {
 import Homepage from './components/pages/homepage';
 import ForgotPassword from './components/pages/forgotpass';
 import Signin from './components/pages/Signin';
+import SignUp from './components/pages/Signup';
+import CreateAccount from './components/pages/CreateAccount';
+import EmailVarification from './components/pages/EmailVarification';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +31,18 @@ const router = createBrowserRouter([
     path: "/signin",
     element: <Signin />,
   },
+  {
+    path: "/createaccount",
+    element: <CreateAccount />,
+  },
+  {
+    path: "/signup",
+    element: <SignUp />,
+  },
+  {
+    path: "/verifyemail",
+    element: <EmailVarification />,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
