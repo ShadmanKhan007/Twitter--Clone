@@ -8,18 +8,6 @@
     width: 300px;
     margin-left: 500px;
   }
-
-  /* .logobox{
-    background: #fff;
-    padding: 30px 120px;
-    width: 550px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    border-radius: 10px;
-  } */
   
   .googleButton {
     display: flex;
@@ -38,32 +26,25 @@
     margin-top: -11px;
   }
   
-  
-  
-  
   img{
     height: 45px;
-   
   }
   
   h2{
     margin-left: -25px;
     margin-top: 50px;
   }
+
   .googleButton{
     display: block;
     background-color: white;
     margin-top: -50px;
-     height: 55px;
-     width: 300px;
-     border-radius: 30px;
-     cursor: pointer;
-     border-style: none;
-     border: 3px solid #dadce0 ;
-     
-     
-   
-  
+    height: 55px;
+    width: 300px;
+    border-radius: 30px;
+    cursor: pointer;
+    border-style: none;
+    border: 3px solid #dadce0 ;
   }
   
   .appleButton{
@@ -76,24 +57,18 @@
      cursor: pointer;
      border-style: none;
      border: 3px solid #dadce0 ;
-  
-  
   }
   
   .appleLogo{
-  
     height: 30px;
     width: 24px;
     margin-left: -220px;
     margin-top: 5px;
-  
   }
   
   .appleButton h4 {
     margin-top: -23px;
   }
-  
-  
   
   .accountButton{
     display: block;
@@ -106,7 +81,6 @@
     cursor: pointer;
     border-style: none;
     border: 3px solid #dadce0 ;
-  
   }
   
   .google{

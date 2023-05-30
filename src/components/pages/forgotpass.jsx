@@ -8,6 +8,7 @@ const ForgotPassword = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('')  
   const navigate = useNavigate();
+  const data = JSON.parse(localStorage.getItem("data"))
 
   function handlePasswordChange(e){
     setPassword(e.target.value)
@@ -19,9 +20,15 @@ const ForgotPassword = () => {
 
   function handleSubmission(e){
     e.preventDefault();
+    const detail = JSON.parse(localStorage.getItem("resetEmail"))
     if(password === confirmPassword){
-        localStorage.setItem("new password", password);
-        navigate('/signin');
+      data.map((value)=>{
+        if(detail.email == value.email){
+          value.password = password
+        }
+      })
+      localStorage.setItem('data', JSON.stringify(data));
+      navigate('/signin');
     }
     else{
         alert('password & confirmed password did not match!')
