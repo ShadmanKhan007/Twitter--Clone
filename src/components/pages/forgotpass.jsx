@@ -23,7 +23,7 @@ const ForgotPassword = () => {
     const detail = JSON.parse(localStorage.getItem("resetEmail"))
     if(password === confirmPassword){
       data.map((value)=>{
-        if(detail.email == value.email){
+        if(detail.email === value.email){
           value.password = password
         }
       })

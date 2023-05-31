@@ -15,11 +15,10 @@ export default function CreateAccount() {
 
 
   return (
-    <div>
-      <div className={styles.main}>
+    <div className={styles.main}>
+      <div>
         <img src='https://img.freepik.com/free-icon/twitter_318-674515.jpg' />
         <h2>Join Twitter today</h2>
-        <img />
         <button className={styles.googleButton}><img className={styles.googleLogo} src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2008px-Google_%22G%22_Logo.svg.png' /> <h4 className={styles.google}>Sign up with Google</h4></button>
 
         <button className={styles.appleButton}><img src='https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg' className={styles.appleLogo} /><h4 className={styles.google}>Sign up with Apple</h4></button>
