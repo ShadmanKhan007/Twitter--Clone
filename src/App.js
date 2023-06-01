@@ -6,8 +6,8 @@ import MainSection from './components/Homepage/MainSection';
 function App() {
   return (
     <div className="App">
-      {/* <Signin/> */}
-      <MainSection />
+      <Signin/>
+      {/* <MainSection /> */}
     </div>
   );
 }

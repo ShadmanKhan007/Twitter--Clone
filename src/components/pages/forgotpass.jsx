@@ -24,8 +24,9 @@ const ForgotPassword = () => {
     if(password === confirmPassword){
       data.map((value)=>{
         if(detail.email === value.email){
-          value.password = password
+         value.password = password
         }
+        return 0;
       })
       localStorage.setItem('data', JSON.stringify(data));
       navigate('/signin');

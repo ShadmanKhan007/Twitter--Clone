@@ -41,7 +41,7 @@ const SignUp = () => {
     else{
       const data = JSON.parse(localStorage.getItem('data'));
       const answer = data.find((value)=>{
-        return value.email == email; 
+        return value.email === email; 
       })
 
       if(answer == null){

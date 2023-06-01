@@ -11,9 +11,6 @@ const Signin = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
-    // const data = JSON.parse(localStorage.getItem("data"));
-    console.log()
     
     function handleEmail(e){
         setEmail(e.target.value)
@@ -35,29 +32,33 @@ const Signin = () => {
 
         if (!emailPattern.test(email)) {
             alert('Invalid email address!');
-
         }
 
         if (!passwordPattern.test(password)) {
             alert('Invalid Password!');
         }
-
-        if(JSON.parse(localStorage.getItem("data")) == null){
+            
+        if(JSON.parse(localStorage.getItem("data")) === null){
             alert("No user found");
         }
-        
+
         else{
             let data = JSON.parse(localStorage.getItem("data"))
             const answer = data.find((value)=>{
-                return value.email == email; 
+                return value.email === email; 
             })
 
-            if(email === answer.email && password === answer.password){
-                navigate('/home')
+            if(answer != null){
+                 if(email === answer.email && password === answer.password){
+                    localStorage.setItem("loginName",JSON.stringify(answer))
+                    navigate("/home")
+                }
+                else{
+                    alert("Please enter the valid login credentials")
+                }
             }
-    
             else{
-                alert("Please enter the valid login credentials")
+                alert("No user found")
             }
         }
     }
