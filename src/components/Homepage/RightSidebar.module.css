@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+   
+  
+}
+
+body{
+  background-color: white;
+ 
+ 
+  }
+  /* .div{
+    width: 100vw;
+    height: 100vh;
+  } */
+
+  
+
+  .logoBox{
+    background: white;
+    /* padding: 30px 120px; */
+    width: 25vw;
+    height: 47%;
+    position: fixed;
+    top: 10%;
+    right: -4%;
+    transform: translate(-30%, -30%);
+    text-align: left;
+    border-radius: 10px;
+    margin-top: 8rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 0px;
+  }
+
+  .logoBox h2{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .content{
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: medium;
+  }
+ 
+
+  .second{
+    margin-top: 0rem;
+ 
+  }
+  .btn{
+    margin-left: 0.5rem;
+    position: relative;
+    top: -5%;
+    border: none;
+    background-color: #f9f6f6;
+    color: #2b85ce;
+  }
+  .searchbtn{
+   display: flex;
+   justify-content: end;
+   position: -webkit-sticky;
+   margin-top: 2rem;
+   margin-right: 3.5rem;
+    height: 4vh;
+  }
+
+  
+  .searchHere{
+    width: 25vw ;
+    border-radius: 30px;
+    height: 6vh;
+    border: none;
+    background-color: white;
+    padding-left: 40px;
+    outline-color:  rgb(29, 155, 240);
+   
+   
+  }
+  .icon{
+   
+   position: relative;
+   top: 15px;
+   right: -35px;
+   color: rgb(29, 155, 240);
+  }
+  .dots{
+   position: relative;
+   right: -300px;
+   top: -35px;
+   
+  }
+  .dots:hover{
+    color: rgb(29, 155, 240);
+  }
+  .card{
+    background-color: white;
+    width: 300px;
+    height: 15vh;
+    border-radius: 1rem;
+    text-align: start;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    top:20%;
+    left: 2%;
+ 
+
+  
+  }
+  .item{
+    margin-top: 1rem;
+  }
+  .item:hover{
+   color: rgb(29, 155, 240);
+   
+  }
+ 

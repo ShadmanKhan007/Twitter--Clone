@@ -1,0 +1,44 @@
+.postStastics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 50px;
+    background-color: white;
+}
+
+.heart {
+    cursor: pointer;
+}
+
+.heart:hover {
+    color: red;
+}
+.repost {
+    cursor: pointer;
+}
+
+.repost:hover {
+    color: blue;
+}
+.comment {
+    cursor: pointer;
+}
+
+.comment:hover {
+    color:green;
+}
+.graph{
+    cursor: pointer;
+}
+
+.graph:hover {
+    color:green;
+}
+.share{
+    cursor: pointer;
+}
+
+.share:hover {
+    color:green;
+}
