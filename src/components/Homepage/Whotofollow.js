@@ -49,7 +49,7 @@ function Whotofollow() {
                     >
                         <div className={style.container3}>
                             <img className={style.img1} src="https://c8.alamy.com/comp/PG55RP/portrait-of-a-successful-business-man-isolated-on-white-PG55RP.jpg" />
-                            <h4> Ram Sandeep Kumar 
+                            <h4> Ram gSandeep Kumar 
                                 <img className={style.icon} src='https://media.istockphoto.com/id/1396933001/vector/vector-blue-verified-badge.jpg?s=612x612&w=0&k=20&c=aBJ2JAzbOfQpv2OCSr0k8kYe0XHutOGBAJuVjvWvPrQ=' /> </h4>
                             <button onClick={handelClick2} className={style.follow}>{second}</button>
                         </div>
