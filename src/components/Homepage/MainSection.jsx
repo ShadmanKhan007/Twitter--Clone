@@ -46,8 +46,10 @@ const MainSection = () => {
     console.log(val)
     axios.post("http://localhost:3000/posts", { id: tweets.length + 1, name: val.confirmName, user_name: val.email, paragraph: text, image: 'https://picsum.photos/1000/500?q=410' }
     )
+
    
     axios.get("http://localhost:3000/posts").then((res) => setTweets(res.data.reverse()))
+    
     
   }
 
