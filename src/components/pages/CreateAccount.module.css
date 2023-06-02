@@ -1,101 +1,104 @@
-.main {
-    margin-top: 10px;
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    margin-left: 500px;
-  }
-  
-  .googleButton {
-    display: flex;
-    align-items: center;
-    
-  }
-  
-  .googleLogo {
-    width: 24px; /* Adjust the width as needed */
-    height: 24px; /* Adjust the height as needed */
-    margin-left: -220px; /* Adjust the margin as needed */
-    margin-top: 10px;
-  }
-  
-  .googleButton h4 {
-    margin-top: -11px;
-  }
-  
-  img{
-    height: 45px;
-  }
-  
-  h2{
-    margin-left: -25px;
-    margin-top: 50px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
 
-  .googleButton{
-    display: block;
-    background-color: white;
-    margin-top: -50px;
-    height: 55px;
-    width: 300px;
-    border-radius: 30px;
-    cursor: pointer;
-    border-style: none;
-    border: 3px solid #dadce0 ;
-  }
-  
-  .appleButton{
-    display: block;
-    background-color: white;
-    margin-top: 20px;
-    height: 55px;
-     width: 300px;
-     border-radius: 30px;
-     cursor: pointer;
-     border-style: none;
-     border: 3px solid #dadce0 ;
-  }
-  
-  .appleLogo{
-    height: 30px;
-    width: 24px;
-    margin-left: -220px;
-    margin-top: 5px;
-  }
-  
-  .appleButton h4 {
-    margin-top: -23px;
-  }
-  
-  .accountButton{
-    display: block;
-    background-color: black;
-    color: white;
-    margin-top: -5px;
-    height: 55px;
-    width: 300px;
-    border-radius: 30px;
-    cursor: pointer;
-    border-style: none;
-    border: 3px solid #dadce0 ;
-  }
-  
-  .google{
-    margin-top: 15px;
-  }
-  
-  h4{
-    margin-top: 8px;
-  }
-  
-  a{
-    color: rgb(29, 155, 240);
-    cursor: pointer;
-  }
-  
-  a:hover{
-    text-decoration: underline;
-  }
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  background: #fff;
+  padding: 30px 40px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.Twticon{
+  color: rgb(29, 155, 240);
+  width: 6vw;
+  height: 6vh;
+}
+
+.heading2 {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.googleButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: black;
+  padding:  20px 16px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.appleButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: black;
+  padding:  20px 16px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.accountButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  border: 1px solid gray;
+  color: white;
+  cursor: pointer;
+  padding:  20px 10px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 70%;
+}
+
+ p {
+     font-weight: bold;
+     font-size: 14px;
+ }
+
+
+.heading4 {
+  margin-top: 10px;
+}
